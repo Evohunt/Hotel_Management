@@ -26,7 +26,7 @@
                   <Font name="American Captain" size="27.0" />
                </font>
             </Label>
-            <Label fx:id="btn_rooms" alignment="CENTER" layoutY="271.0" onMouseEntered="#RoomsMouseEnter" onMouseExited="#RoomsMouseExit" prefHeight="42.0" prefWidth="210.0" style="-fx-background-color: #28056b;" text="ROOMS" textFill="#c6c6c6">
+            <Label fx:id="btn_rooms" alignment="CENTER" layoutY="271.0" onMouseClicked="#btnRoomsChangeScene" onMouseEntered="#RoomsMouseEnter" onMouseExited="#RoomsMouseExit" prefHeight="42.0" prefWidth="210.0" style="-fx-background-color: #28056b;" text="ROOMS" textFill="#c6c6c6">
                <font>
                   <Font name="American Captain" size="27.0" />
                </font>

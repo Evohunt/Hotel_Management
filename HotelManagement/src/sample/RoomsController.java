@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class MainController {
+public class RoomsController {
 
     public Label btn_home;
     public Label btn_rooms;
@@ -26,7 +26,7 @@ public class MainController {
 
     public void HomeMouseExit(MouseEvent mouseEvent) {
         btn_home.setStyle("-fx-border-color: transparent");
-        btn_home.setStyle("-fx-background-color: #3a0096");
+        btn_home.setStyle("-fx-background-color: #28056b");
     }
 
     public void RoomsMouseEnter(MouseEvent mouseEvent) {
@@ -35,7 +35,7 @@ public class MainController {
 
     public void RoomsMouseExit(MouseEvent mouseEvent) {
         btn_rooms.setStyle("-fx-border-color: transparent");
-        btn_rooms.setStyle("-fx-background-color: #28056b");
+        btn_rooms.setStyle("-fx-background-color: #3a0096");
     }
 
     public void BookMouseEnter(MouseEvent mouseEvent) {
@@ -60,13 +60,15 @@ public class MainController {
         btn_exit.setStyle("-fx-background-color: #28056b");
     }
 
-    public void btnRoomsChangeScene(MouseEvent mouseEvent) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("Rooms.fxml"));
+    public void btnHomeChangeScene(MouseEvent mouseEvent) throws IOException {
 
-        Scene roomsScene = new Scene(root);
+        Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
 
-        Stage aboutWindow = (Stage)((Node)mouseEvent.getSource()).getScene().getWindow();
-        aboutWindow.setScene(roomsScene);
-        aboutWindow.show();
+        Scene mainScene = new Scene(root);
+
+        Stage mainWindow = (Stage)((Node)mouseEvent.getSource()).getScene().getWindow();
+        mainWindow.setScene(mainScene);
+        mainWindow.show();
+
     }
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panel_bg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RoomsController">
+    <children>
+        <Pane prefHeight="500.0" prefWidth="210.0" style="-fx-background-color: #190342;">
+            <children>
+                <Pane layoutX="-1.0" layoutY="55.0" prefHeight="103.0" prefWidth="211.0" style="-fx-background-color: #28056b;">
+                    <children>
+                        <Label layoutX="22.0" layoutY="31.0" text="Hotel Manager" textFill="#c9c9c9">
+                            <font>
+                                <Font name="American Captain" size="33.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Label fx:id="btn_home" alignment="CENTER" layoutY="229.0" onMouseClicked="#btnHomeChangeScene" onMouseEntered="#HomeMouseEnter" onMouseExited="#HomeMouseExit" prefHeight="42.0" prefWidth="210.0" style="-fx-background-color: #28056b;" text="HOME" textFill="#c6c6c6">
+                    <font>
+                        <Font name="American Captain" size="27.0" />
+                    </font>
+                </Label>
+                <Label fx:id="btn_rooms" alignment="CENTER" layoutY="271.0" onMouseEntered="#RoomsMouseEnter" onMouseExited="#RoomsMouseExit" prefHeight="42.0" prefWidth="210.0" style="-fx-background-color: #3a0096;" text="ROOMS" textFill="#c6c6c6">
+                    <font>
+                        <Font name="American Captain" size="27.0" />
+                    </font>
+                </Label>
+                <Label fx:id="btn_book" alignment="CENTER" layoutY="313.0" onMouseEntered="#BookMouseEnter" onMouseExited="#BookMouseExit" prefHeight="42.0" prefWidth="210.0" style="-fx-background-color: #28056b;" text="BOOK" textFill="#c6c6c6">
+                    <font>
+                        <Font name="American Captain" size="27.0" />
+                    </font>
+                </Label>
+                <Label fx:id="btn_exit" alignment="CENTER" layoutX="6.0" layoutY="6.0" onMouseClicked="#btnExit" onMouseEntered="#ExitMouseEnter" onMouseExited="#ExitMouseExit" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: #350187;" text="EXIT" textFill="#c6c6c6">
+                    <font>
+                        <Font name="American Captain" size="27.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
