@@ -43,13 +43,13 @@
                 </Label>
             </children>
         </Pane>
-      <DatePicker layoutX="354.0" layoutY="119.0" prefHeight="24.0" prefWidth="175.0" />
+      <DatePicker fx:id="date_in" layoutX="354.0" layoutY="119.0" prefHeight="24.0" prefWidth="175.0" />
       <Label layoutX="354.0" layoutY="98.0" prefHeight="21.0" prefWidth="146.0" text="Check-In Date">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <DatePicker layoutX="587.0" layoutY="119.0" prefHeight="24.0" prefWidth="175.0" />
+      <DatePicker fx:id="date_out" layoutX="587.0" layoutY="119.0" prefHeight="24.0" prefWidth="175.0" />
       <Label layoutX="587.0" layoutY="98.0" prefHeight="21.0" prefWidth="146.0" text="Check-Out Date">
          <font>
             <Font size="15.0" />
@@ -70,22 +70,22 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="473.0" layoutY="181.0" prefHeight="25.0" prefWidth="210.0" />
-      <TextField layoutX="473.0" layoutY="211.0" prefHeight="25.0" prefWidth="210.0" />
-      <TextField layoutX="473.0" layoutY="242.0" prefHeight="25.0" prefWidth="210.0" />
+      <TextField fx:id="customer_name" layoutX="473.0" layoutY="181.0" prefHeight="25.0" prefWidth="210.0" />
+      <TextField fx:id="customer_email" layoutX="473.0" layoutY="211.0" prefHeight="25.0" prefWidth="210.0" />
+      <TextField fx:id="customer_phone" layoutX="473.0" layoutY="242.0" prefHeight="25.0" prefWidth="210.0" />
       <Label layoutX="354.0" layoutY="290.0" prefHeight="21.0" prefWidth="69.0" text="Adults">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="417.0" layoutY="288.0" prefHeight="25.0" prefWidth="60.0" />
+      <TextField fx:id="customer_adults_number" layoutX="417.0" layoutY="288.0" prefHeight="25.0" prefWidth="60.0" />
       <Label layoutX="500.0" layoutY="290.0" prefHeight="21.0" prefWidth="69.0" text="Children">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="563.0" layoutY="288.0" prefHeight="25.0" prefWidth="60.0" />
-      <Button layoutX="354.0" layoutY="360.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" text="SUBMIT">
+      <TextField fx:id="customer_children_number" layoutX="563.0" layoutY="288.0" prefHeight="25.0" prefWidth="60.0" />
+      <Button fx:id="book_submit" layoutX="354.0" layoutY="360.0" mnemonicParsing="false" onAction="#btnBookSubmit" prefHeight="42.0" prefWidth="100.0" text="SUBMIT">
          <font>
             <Font name="Arial Black" size="14.0" />
          </font>

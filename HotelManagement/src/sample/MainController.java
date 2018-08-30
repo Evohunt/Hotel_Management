@@ -57,7 +57,7 @@ public class MainController {
 
     public void ExitMouseExit(MouseEvent mouseEvent) {
         btn_exit.setStyle("-fx-border-color: transparent");
-        btn_exit.setStyle("-fx-background-color: #28056b");
+        btn_exit.setStyle("-fx-background-color: #350187");
     }
 
     public void btnRoomsChangeScene(MouseEvent mouseEvent) throws IOException {
@@ -68,5 +68,15 @@ public class MainController {
         Stage aboutWindow = (Stage)((Node)mouseEvent.getSource()).getScene().getWindow();
         aboutWindow.setScene(roomsScene);
         aboutWindow.show();
+    }
+
+    public void btnBookChangeScene(MouseEvent mouseEvent) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("Book.fxml"));
+
+        Scene bookScene = new Scene(root);
+
+        Stage bookWindow = (Stage)((Node)mouseEvent.getSource()).getScene().getWindow();
+        bookWindow.setScene(bookScene);
+        bookWindow.show();
     }
 }

@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="panel_bg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+<AnchorPane fx:id="panel_bg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
    <children>
       <Pane prefHeight="500.0" prefWidth="210.0" style="-fx-background-color: #190342;">
          <children>
@@ -31,7 +31,7 @@
                   <Font name="American Captain" size="27.0" />
                </font>
             </Label>
-            <Label fx:id="btn_book" alignment="CENTER" layoutY="313.0" onMouseEntered="#BookMouseEnter" onMouseExited="#BookMouseExit" prefHeight="42.0" prefWidth="210.0" style="-fx-background-color: #28056b;" text="BOOK" textFill="#c6c6c6">
+            <Label fx:id="btn_book" alignment="CENTER" layoutY="313.0" onMouseClicked="#btnBookChangeScene" onMouseEntered="#BookMouseEnter" onMouseExited="#BookMouseExit" prefHeight="42.0" prefWidth="210.0" style="-fx-background-color: #28056b;" text="BOOK" textFill="#c6c6c6">
                <font>
                   <Font name="American Captain" size="27.0" />
                </font>
